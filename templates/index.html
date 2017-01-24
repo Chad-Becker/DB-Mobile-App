@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<section id="requestArea">
+	<h1>Hello from Flask DB app!</h1>
+	<p>{% if name=="default name" %} Default name is:
+		{% else %} First resulting name is:
+		{% endif %} {{ name }}</p>
+	<p>{{ result }}</p>
+        <form action="{{ url_for('dbGet') }}">
+		<button type="submit">Query DB</button>
+        </form>
+</section>
+</html>
